@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Index1</title>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.js"
+        integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous">
+
+
+        </script>
+
+    <script src="https://kit.fontawesome.com/fb65f5d132.js" crossorigin="anonymous"></script>
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous" />
+
+    <link rel="stylesheet" href="css/header.css">
+
+    <link rel="stylesheet" href="css/navbar.css">
+
+    <link rel="stylesheet" href="css/up_and_down.css">
+
+    <link rel="stylesheet" href="css/main.css">
+
+    <link rel="stylesheet" href="css/gallery.css">
+</head>
+
+<body>
+    <div style="position: relative;">
+        <div id="header"></div>
+
+        <!--Remaining section-->
+        <!-- ALL PAGE TITLE  -->
+        <div class="all-page-title" style="background-color: rgb(55, 55, 72);">
+            <div class="row">
+                <div class="col-lg-11">
+                    <h1>PROJECTS</h1>
+                </div>
+            </div>
+        </div>
+
+        <div  id="project">
+            <!-- GALLERY -->
+          </div>
+          <div class="gallery">
+            <a href="img/1.jpg" ></a><img src="img/about.jpg" alt="" /></a>
+            <a href="img/carousel-1.jpg"><img src="img/carousel-2.jpg" alt="" /></a>
+            <a href="img/gallery-1.jpg"><img src="img/gallery-2.jpg" alt="" /></a>
+            <a href="img/gallery-3.jpg"><img src="img/gallery-4.jpg" alt="" /></a>
+            <a href="img/gallery-5.jpg"><img src="img/gallery-6.jpg" alt="" /></a>
+            <a href="img/gallery.jpg"><img src="img/header.jpg" alt="" /></a>
+            <a href="img/product-1.jpg"><img src="img/product-2.jpg" alt="" /></a>
+            <a href="img/product-3.jpg"><img src="img/products-agriculture.jpg" alt="" /></a>
+            <a href="img/about.jpg"><img src="img/product-3.jpg" alt="" /></a>
+            
+        
+          </div>
+
+        <div id="footer"></div>
+    </div>
+    <script>
+        $.get("header.html", function (data) {
+            $("#header").replaceWith(data);
+        });
+        $.get("footer.html", function (data) {
+            $("#footer").replaceWith(data);
+        });
+    </script>
+</body>
+
+</html>
